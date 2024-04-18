@@ -1,6 +1,6 @@
 
 [![Pub](https://img.shields.io/badge/pub-v0.0.1-blue)](https://pub.dartlang.org/packages/Flutter_validation)
-[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/Arshadshaykh/flutter_validation/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/nichetechsol/flutter_validation/blob/main/LICENSE)
 
 ## Description
 This package provides a set of commonly used validation functions for form fields in Flutter applications.
@@ -36,12 +36,12 @@ dependencies:
 - combineValidators: Combines multiple validators.
   
 ## Examples
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/Required%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/Strong%20Password%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/CombinedRE%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/Phone%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/Max%20length%2016%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/Arshadshaykh/flutter_validation/blob/main/assets/Combined%20Email%20and%20Phone%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Required%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Strong%20Password%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/CombinedRE%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Phone%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Max%20length%2016%20-%20Made%20with%20Clipchamp.gif)
+![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Combined%20Email%20and%20Phone%20-%20Made%20with%20Clipchamp.gif)
 ## Usage
 
 #### Using Flutter_validation
@@ -114,7 +114,7 @@ TextFormField(
 
 ## Info
 
-Feel Free to request any missing features or report issues [here](https://github.com/Arshadshaykh/flutter_validation/issues).
+Feel Free to request any missing features or report issues [here](https://github.com/nichetechsol/flutter_validation/issues).
 
 ## License
 

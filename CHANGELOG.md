@@ -1,5 +1,5 @@
 ## 0.0.3
-* `Improved Documentation`: The README file has been updated to provide clearer explanations and examples.
+* `Improved Documentation`: The README file has been updated.
 
 ## 0.0.2
 
