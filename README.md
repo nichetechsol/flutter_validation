@@ -36,16 +36,73 @@ dependencies:
 - combineValidators: Combines multiple validators.
   
 ## Examples
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Required%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Strong%20Password%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/CombinedRE%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Phone%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Max%20length%2016%20-%20Made%20with%20Clipchamp.gif)
-![](https://github.com/nichetechsol/flutter_validation/blob/main/assets/Combined%20Email%20and%20Phone%20-%20Made%20with%20Clipchamp.gif)
+<table>
+<tr>
+  <td align="center">
+    Email
+  </td>
+  <td align="center">
+    Required
+  </td>
+  <td align="center">
+    Strong Password
+  </td>
+  <td align="center">
+    Combined Required and Email
+  </td>
+</tr>
+  
+<tr>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/0ffa3129-81e0-4722-8234-eeacc4791f39"  width="200"/>
+  </td>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/55d2b93f-25ab-4af4-8d2f-e018a790f3dc"  width="200"/>
+  </td>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/7a9a4fca-717c-40c3-9342-d60fec4bfa39"  width="200"/>
+  </td>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/4ee96731-ffac-45fa-b7f5-0ff4603ff113"  width="200"/>
+  </td>
+</tr>
+
+<br>
+
+<tr>
+  <td align="center">
+    Phone
+  </td>
+  <td align="center">
+    Maximum Length 16
+  </td>
+  <td align="center">
+    Combined Email and Phone
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/632f10f6-b263-4386-b328-3f27ae682372"  width="200"/>
+  </td>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/eb625d21-bd8f-45af-b737-36ff770e079d"  width="200"/>
+  </td>
+  <td>
+    <img src="https://github.com/nichetechsol/flutter_validation/assets/105237701/7241401c-0b2f-4cc0-9648-f03c89db5e0d"  width="200"/>
+  </td>
+</tr>
+  
+</table>
+
+
+
+
 ## Usage
 
 #### Using Flutter_validation
 Use Validate class with it's functions like this,
+
 
 
 
