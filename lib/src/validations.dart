@@ -147,4 +147,6 @@ class Validate {
     }
     return null;
   }
+
+  static String? dateValidator({String? errorMessage, String? value}){}
 }

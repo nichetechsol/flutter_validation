@@ -1,3 +1,7 @@
+## 0.0.4
+* `Improved Documentation`: The README file has been updated.
+* `Licence Update`: Licence has been updated.
+
 ## 0.0.3
 * `Improved Documentation`: The README file has been updated.
 
