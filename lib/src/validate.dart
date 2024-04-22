@@ -1,13 +1,15 @@
-class Validate {
-  static dynamic requiredValidator(
-      {String? errorMessage, String? value, message}) {
+import 'methods.dart';
+
+class Validate implements Validators {
+  @override
+  dynamic requiredValidator({String? errorMessage, String? value, message}) {
     return (value?.isEmpty ?? true)
         ? (errorMessage ?? 'This field is required.')
         : null;
   }
 
-  // Email validator
-  static dynamic emailValidator({String? errorMessage, String? value}) {
+  @override
+  dynamic emailValidator({String? errorMessage, String? value}) {
     final RegExp emailRegex = RegExp(
         r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
 
@@ -16,35 +18,40 @@ class Validate {
         : null;
   }
 
-  static String? phoneValidator({String? errorMessage, String? value}) {
+  @override
+  String? phoneValidator({String? errorMessage, String? value}) {
     if (value == null || value.length <= 9) {
       return errorMessage ?? 'Please enter a valid phone number.';
     }
     return null;
   }
 
-  static dynamic upperCaseValidator({String? errorMessage, String? value}) {
+  @override
+  dynamic upperCaseValidator({String? errorMessage, String? value}) {
     if (!RegExp(r'[A-Z]').hasMatch((value ?? '').trim())) {
       return (errorMessage ?? 'Password must contain an uppercase letter');
     }
     return null;
   }
 
-  static dynamic lowerCaseValidator({String? errorMessage, String? value}) {
+  @override
+  dynamic lowerCaseValidator({String? errorMessage, String? value}) {
     if (!RegExp(r'[a-z]').hasMatch((value ?? '').trim())) {
       return (errorMessage ?? 'Password must contain a lowercase letter');
     }
     return null;
   }
 
-  static dynamic digitValidator({String? errorMessage, String? value}) {
+  @override
+  dynamic digitValidator({String? errorMessage, String? value}) {
     if (!RegExp(r'\d').hasMatch((value ?? '').trim())) {
       return (errorMessage ?? 'Password must contain at least one digit.');
     }
     return null;
   }
 
-  static dynamic specialCharValidator({String? errorMessage, String? value}) {
+  @override
+  dynamic specialCharValidator({String? errorMessage, String? value}) {
     if (!RegExp(r'[!@#$%^&*]').hasMatch((value ?? '').trim())) {
       return (errorMessage ??
           'Password must contain at least one special character.');
@@ -52,8 +59,8 @@ class Validate {
     return null;
   }
 
-  // allow only alphabets and numbers
-  static String? alphanumericValidator({String? errorMessage, String? value}) {
+  @override
+  String? alphanumericValidator({String? errorMessage, String? value}) {
     if (value == null || value.isEmpty) {
       return (errorMessage ?? "Please enter a value");
     } else if (!RegExp(r'^[a-zA-Z0-9]+$').hasMatch(value)) {
@@ -62,8 +69,8 @@ class Validate {
     return null;
   }
 
-//maximum length validator
-  static String? maxLengthValidator(
+  @override
+  String? maxLengthValidator(
       {int maxLength = 255, String? errorMessage, String? value}) {
     if (value == null || value.length > maxLength) {
       return (errorMessage ??
@@ -72,8 +79,8 @@ class Validate {
     return null;
   }
 
-//minimum length validator
-  static String? minLengthValidator(
+  @override
+  String? minLengthValidator(
       {int minLength = 1, String? errorMessage, String? value}) {
     if (value == null || value.length < minLength) {
       return (errorMessage ?? 'Please enter at least $minLength characters');
@@ -81,7 +88,8 @@ class Validate {
     return null;
   }
 
-  static String? combinedPhoneEmailValidator({
+  @override
+  String? combinedPhoneEmailValidator({
     String? errorMessage,
     String? value,
   }) {
@@ -107,7 +115,8 @@ class Validate {
     return null;
   }
 
-  static dynamic strongPassWordValidation(
+  @override
+  dynamic strongPassWordValidation(
       {int? minLength = 6,
       String? errorMessage,
       List? validations,
@@ -138,7 +147,8 @@ class Validate {
     return null;
   }
 
-  static dynamic combineValidators({required List validators}) {
+  @override
+  dynamic combineValidators({required List validators}) {
     for (final validator in validators) {
       final error = validator;
       if (error != null) {

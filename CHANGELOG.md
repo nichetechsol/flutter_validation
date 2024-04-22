@@ -1,5 +1,15 @@
+## 0.1.0
+> Note: This release has breaking changes.
+* `Breaking change`: changed the class name. 
+* `Improved Documentation`: updated Documentation.
+
+
+## 0.0.6
+*  `Bug Fix`: minor bug fixes.
+* `Improved Documentation`: updated working preview.
+
 ## 0.0.5
-* `Improved Documentation`: updated working preview .
+* `Improved Documentation`: updated working preview.
 
 ## 0.0.4
 * `Improved Documentation`: The README file has been updated.

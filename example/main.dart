@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_validation/flutter_validation.dart';
+import 'package:flutter_validation/src/validate.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController phoneController = TextEditingController();
   TextEditingController maxlenController = TextEditingController();
   TextEditingController minlenController = TextEditingController();
-  Validate validate = Validate();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     TextFormField(
                         autovalidateMode: AutovalidateMode.onUserInteraction,
                         controller: emailController,
-                        validator: (value) => Validate.emailValidator(
+                        validator: (value) => Validate().emailValidator(
                             errorMessage: 'enter valid email address',
                             value: value)),
                     const SizedBox(
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     TextFormField(
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: passwordController,
-                      validator: (value) => Validate.requiredValidator(
+                      validator: (value) => Validators().requiredValidator(
                           errorMessage: 'This field must not be empty',
                           value: value),
                     ),
@@ -86,11 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: confirmPassController,
                       validator: (value) =>
-                          Validate.strongPassWordValidation(validations: [
-                        Validate.upperCaseValidator(value: value),
-                        Validate.lowerCaseValidator(value: value),
-                        Validate.digitValidator(value: value),
-                        // Validate.specialCharValidator(value: value),
+                          Validators().strongPassWordValidation(validations: [
+                        Validators().upperCaseValidator(value: value),
+                        Validators().lowerCaseValidator(value: value),
+                        Validators().digitValidator(value: value),
+                        // Validators().specialCharValidator(value: value),
                       ], value: value),
                     ),
                     const SizedBox(
@@ -100,9 +100,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     TextFormField(
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: strongPasswordController,
-                      validator: (value) => Validate.strongPassWordValidation(
-                          errorMessage: 'password me number likhh',
-                          value: value),
+                      validator: (value) => Validators()
+                          .strongPassWordValidation(
+                              errorMessage: 'password me number likhh',
+                              value: value),
                     ),
                     const SizedBox(
                       height: 20,
@@ -112,10 +113,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: combineController,
                       validator: (value) =>
-                          Validate.combineValidators(validators: [
-                        Validate.requiredValidator(value: value),
-                        Validate.emailValidator(value: value),
-                        Validate.strongPassWordValidation(value: value),
+                          Validators().combineValidators(validators: [
+                        Validators().requiredValidator(value: value),
+                        Validators().emailValidator(value: value),
+                        Validators().strongPassWordValidation(value: value),
                       ]),
                     ),
                     const SizedBox(
@@ -126,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: phoneController,
                       validator: (value) =>
-                          Validate.phoneValidator(value: value),
+                          Validators().phoneValidator(value: value),
                     ),
                     const SizedBox(
                       height: 20,
@@ -135,8 +136,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     TextFormField(
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: maxlenController,
-                      validator: (value) => Validate.maxLengthValidator(
-                          value: value, maxLength: 16),
+                      validator: (value) => Validators()
+                          .maxLengthValidator(value: value, maxLength: 16),
                     ),
                     const SizedBox(
                       height: 20,
@@ -146,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       controller: minlenController,
                       validator: (value) =>
-                          Validate.combinedPhoneEmailValidator(
+                          Validators().combinedPhoneEmailValidator(
                         value: value,
                       ),
                     ),
